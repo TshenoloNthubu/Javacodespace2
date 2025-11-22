@@ -1,5 +1,3 @@
-package main.java.com.banking.model;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +10,6 @@ public class Customer {
     private String email;
     private List<Account> accounts;
 
-    public Customer(String customerId, String firstName, String surname, String address) {
         this.customerId = customerId;
         this.firstName = firstName;
         this.surname = surname;
@@ -20,7 +17,6 @@ public class Customer {
         this.accounts = new ArrayList<>();
     }
 
-    // Getters and setters
     public String getCustomerId() { return customerId; }
     public String getFirstName() { return firstName; }
     public String getSurname() { return surname; }
@@ -38,11 +34,6 @@ public class Customer {
     @Override
     public String toString() {
         return "Customer{" +
-                "customerId='" + customerId + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", surname='" + surname + '\'' +
-                ", address='" + address + '\'' +
-                ", accounts=" + accounts.size() +
                 '}';
     }
 }
